@@ -1,0 +1,14 @@
+import telegram
+import asyncio
+
+TOKEN = '6436979056:AAFHuMuhXL8D-EOp86Uq4Z-3taw6aOCq_ZE'
+
+async def main():
+  bot = telegram.Bot(TOKEN)
+
+ async with bot :
+    print(await bot.get_update())
+
+
+if __name__ == '__main__': 
+    asyncio.run(main())
